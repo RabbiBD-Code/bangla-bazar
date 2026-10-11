@@ -11,9 +11,8 @@ export default async function Home() {
   const res = await fetch("https://openapi.programming-hero.com/api/bazardor/products");
   const data = await res.json()
   const products:RicePrice[] = data;
-  const highPriceProducts:RicePrice[] = products.filter(hp => hp.change.dir === 'up');
-  const lowerPriceProducts: RicePrice[] = products.filter(hp => hp.change.dir === 'down')
-  console.log(lowerPriceProducts);
+  const highPriceProducts:RicePrice[] = products.filter(hp => hp.change.dir === 'up').sort((a,b)=>b.today - a.today);
+  const lowerPriceProducts: RicePrice[] = products.filter(hp => hp.change.dir === 'down').sort((a,b)=>a.today - b.today)
 
   return (
     <div>
