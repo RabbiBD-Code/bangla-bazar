@@ -1,8 +1,30 @@
 
+# My project name : bangla-bazar
 
 
+**Bangla Bazar Dor is a web application designed to help people across Bangladesh check and compare the latest bazar prices of essential products, including rice and other daily necessities. The platform displays product prices in an accessible interface, helping consumers stay informed about market rates and make better purchasing decisions. It aims to make market price information easier to access for people throughout Bangladesh.
+**
+
+# Technologies Used
+- Next.js – Building the web application.
+- React.js – Creating reusable and interactive UI components.
+- TypeScript – Ensuring type safety and maintainable code.
+- Tailwind CSS – Designing a responsive and modern user interface.
+- REST API – Fetching product and market price information.
+- React Marquee Text – Displaying scrolling market price information.
 
 
+# Features
+1. Market Price Tracking: View prices of essential products, such as rice and other daily necessities.
+2. Product Listing: Browse available products with their names, images, and prices.
+3. Live Price Display: Present the latest prices available from the connected API.
+4. Scrolling Price Marquee: Display product prices in a scrolling banner for quick access.
+5. Product Details: View relevant information about individual products.
+6. Bangladesh-Focused Information: Make market price information accessible to consumers across Bangladesh.
+7. Responsive Design: Use the website on mobile phones, tablets, and desktop devices.
+8. API Integration: Retrieve and display market data dynamically.
+9. User-Friendly Interface: Make product prices easy to find and understand.
+10. Price Awareness: Help consumers compare available price information before shopping.
 
 
 
