@@ -1,5 +1,5 @@
 
-r
+# My project name : bangla-bazar
 
 
 **Bangla Bazar Dor is a web application designed to help people across Bangladesh check and compare the latest bazar prices of essential products, including rice and other daily necessities. The platform displays product prices in an accessible interface, helping consumers stay informed about market rates and make better purchasing decisions. It aims to make market price information easier to access for people throughout Bangladesh.
