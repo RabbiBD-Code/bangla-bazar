@@ -64,7 +64,7 @@ const PageDetails = async({params}: RiceDetailsProps) => {
                 </p>
                 <p className="text-xs text-gray-400 mt-1.5">
                   গতকালের তুলনায় আজকের দাম{" "}
-                  <span className="font-bold text-gray-800">{data.today < data.yesterday ? "কমেছে" : "বেড়েছে"}</span> -{" "}
+                  <span className="font-bold text-gray-800">{data.today < data.yesterday ? "কমেছে" : "বেড়েছে"}</span> {" "}
                   {Math.abs(data.today - data.yesterday)} টাকা
                 </p>
               </div>
