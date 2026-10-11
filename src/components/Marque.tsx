@@ -21,8 +21,8 @@ const Marque = async() => {
                         
                         <span>{m.image}{'  '}</span>
                     <span className="font-semibold">{m.nameBn }{' '}</span>
-                     <span>{m.today}{' '}টাকা{' '}/{' '}{m.unit === "kg" ? "কেজি" : m.unit === "litre" ? "লিটার" : m.unit}{' '}</span>
-                     <span className={`${m.change.dir == "down" ? "text-green-400":"text-red-600"}`}>{m.change.dir === "up" ? "▲" : "▼"}{" "}{Math.abs(m.change.pct).toLocaleString("bn-BD")}%</span>
+                     <span>{(m.today.toLocaleString("bn-BD"))}{' '}টাকা{' '}/{' '}{m.unit === "kg" ? "কেজি" : m.unit === "litre" ? "লিটার" : m.unit}{' '}</span>
+                     <span className={`${m.change.dir == "down" ? "text-[#682cf3]": m.change.dir == "up" ? "text-red-600" : m.change.dir == "flat" ? "text-gray-500" : ""}`}>{m.change.dir === "up" ? "▲" : m.change.dir === "down"? "▼" : ''}{" "}{Math.abs(m.change.pct).toLocaleString("bn-BD")}%</span>
                      <span></span>
                         </span> 
                      </Link>)

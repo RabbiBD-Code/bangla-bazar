@@ -6,6 +6,7 @@ import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const UserInfo = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -40,9 +41,10 @@ const UserInfo = () => {
       const result = await authClient.signOut();
 
       if (result.error) {
-        console.error("Sign out failed:", result.error);
+        toast.error("কিছু একটা সমস্যা হয়েছে");
         return;
       }
+      toast.success("সাইন আউট সফল হয়েছেন")
 
       setOpen(false);
       router.push("/signin");

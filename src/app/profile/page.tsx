@@ -3,6 +3,7 @@ import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import React from "react";
+import toast from "react-hot-toast";
 
 const ProfilePage = () => {
   const {
@@ -34,6 +35,7 @@ const ProfilePage = () => {
         },
       },
     });
+    toast.success('সাইন আউট সফল হয়েছেন')
   };
 
   return (

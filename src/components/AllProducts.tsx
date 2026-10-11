@@ -41,7 +41,7 @@ const AllProducts = ({product}:{product:RicePrice}) => {
 
         {/* Percentage Badge */}
         <div className="flex items-center gap-1 bg-[#EEF6EF] px-3 py-1.5 rounded-full text-sm">
-          <span className={`${product.change.dir == "down" ? "text-[#682cf3]":"text-red-600"}`}>{product.change.dir === "up" ? "▲" : "▼"}{" "}{Math.abs(product.change.pct).toLocaleString("bn-BD")}%</span>
+          <span className={`${product.change.dir == "down" ? "text-[#682cf3]": product.change.dir == "up" ? "text-red-600" : product.change.dir == "flat" ? "text-gray-500" : ""}`}>{product.change.dir === "up" ? "▲" : product.change.dir === "down"? "▼" : ''}{" "}{Math.abs(product.change.pct).toLocaleString("bn-BD")??0}%</span>
                      <span></span>
         </div>
       </div>
