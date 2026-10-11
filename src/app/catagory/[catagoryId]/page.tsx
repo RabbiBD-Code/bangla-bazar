@@ -3,6 +3,7 @@ interface RiceDetailsProps {
     catagoryId: string;
   }>;
 }
+import NotFoundPage from "@/app/not-found";
 import FilteredProducts from "@/components/FilteredProducs";
 import { RicePrice } from "@/type/type";
 
@@ -17,7 +18,9 @@ const CategoryPage = async ({ params }:RiceDetailsProps) => {
   const data = await res.json();
   const products: RicePrice[] = data;
   const product: RicePrice = data[0];
-  console.log(product);
+  if(!products){
+    <NotFoundPage/>
+  }
 
   
   
@@ -39,7 +42,7 @@ const CategoryPage = async ({ params }:RiceDetailsProps) => {
             {/* Title and Subtitle */}
             <div className="flex flex-col">
               <h3 className="text-2xl font-bold text-gray-900 leading-tight">
-                {product.categoryNameBn}
+                {product?.categoryNameBn}
               </h3>
               <p className="text-sm text-gray-500 font-medium">
                 <span>{products.length.toLocaleString("bn-BD")}</span>
