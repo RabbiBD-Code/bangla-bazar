@@ -5,13 +5,7 @@
 **Bangla Bazar Dor is a web application designed to help people across Bangladesh check and compare the latest bazar prices of essential products, including rice and other daily necessities. The platform displays product prices in an accessible interface, helping consumers stay informed about market rates and make better purchasing decisions. It aims to make market price information easier to access for people throughout Bangladesh.
 **
 
-# Technologies Used
-- Next.js – Building the web application.
-- React.js – Creating reusable and interactive UI components.
-- TypeScript – Ensuring type safety and maintainable code.
-- Tailwind CSS – Designing a responsive and modern user interface.
-- REST API – Fetching product and market price information.
-- React Marquee Text – Displaying scrolling market price information.
+
 
 
 # Features
